@@ -5,6 +5,12 @@ class ClaudeSkillManager < Formula
   sha256 "0d040fd7e71938ab67b24520ee7bc4ed01c0718edd8ca3dd4e1dffc71023b94c"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/aclemen1/homebrew-tap/releases/download/v1.6.0"
+    rebuild 1
+    sha256 cellar: :any, arm64_sonoma: "4cfbb085eb1b10caccc481340fd168933787d2371cc27ec60812ede04aefd627"
+  end
+
   depends_on "python@3.12"
   depends_on "rust" => :build
 
