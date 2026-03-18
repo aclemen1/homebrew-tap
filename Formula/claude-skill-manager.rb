@@ -1,8 +1,8 @@
 class ClaudeSkillManager < Formula
   desc "Manage Claude Code skills across projects — CLI + TUI"
   homepage "https://github.com/aclemen1/claude-skill-manager"
-  url "https://files.pythonhosted.org/packages/73/8a/9d9641405c2d821cf6c91ca1c349e9a2be752485921b8c6c94bb85915739/claude_skill_manager-1.4.1.tar.gz"
-  sha256 "63f9859dd84e4b93cbc6434d209cb292c904816a65329634b09574fd072f522f"
+  url "https://files.pythonhosted.org/packages/53/e0/c677e2fe9fb49650a09bfa20dabb319c86d3bccdee26aba920ad14080768/claude_skill_manager-1.5.0.tar.gz"
+  sha256 "6cdf6c963f33aad6ac0c9f6ba0111d10a4ab8f85118dac2243ec24aaee73f124"
   license "MIT"
 
   depends_on "python@3.12"
