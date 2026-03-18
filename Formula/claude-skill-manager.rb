@@ -12,9 +12,15 @@ class ClaudeSkillManager < Formula
     venv = libexec
     system python3, "-m", "venv", "--without-pip", venv
     system venv/"bin/python", "-m", "ensurepip", "--default-pip"
-    system venv/"bin/pip", "install", "--no-deps", "."
     system venv/"bin/pip", "install", "."
     bin.install_symlink Dir[venv/"bin/csm"]
+  end
+
+  # Python extension modules (.so) from pre-built wheels have fixed
+  # Mach-O headers that cannot be relocated by Homebrew.
+  # This is expected and safe — the venv isolates them.
+  def skip_relocation?(file)
+    file.extname == ".so" && file.to_s.include?("site-packages")
   end
 
   test do
