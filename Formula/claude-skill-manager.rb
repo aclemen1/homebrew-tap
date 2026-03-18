@@ -105,8 +105,8 @@ class ClaudeSkillManager < Formula
   end
 
   resource "uc-micro-py" do
-    url "https://files.pythonhosted.org/packages/75/db/241444fe6df6966a4c3fc12f8a1cbb689c42426d6b692a55e91092e4cfd4/uc_micro_py-2.0.0.tar.gz"
-    sha256 "1f4af7150e33201e5e68cf32e54b83c57c377fa03cb6452887b654cef6240b60"
+    url "https://files.pythonhosted.org/packages/78/67/9a363818028526e2d4579334460df777115bdec1bb77c08f9db88f6389f2/uc_micro_py-2.0.0.tar.gz"
+    sha256 "c53691e495c8db60e16ffc4861a35469b0ba0821fe409a8a7a0a71864d33a811"
   end
 
   def install
