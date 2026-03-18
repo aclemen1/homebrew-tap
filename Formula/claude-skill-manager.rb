@@ -8,8 +8,13 @@ class ClaudeSkillManager < Formula
   depends_on "python@3.12"
 
   def install
-    venv = virtualenv_create(libexec, "python3.12")
-    venv.pip_install_and_link buildpath
+    python3 = "python3.12"
+    venv = libexec
+    system python3, "-m", "venv", "--without-pip", venv
+    system venv/"bin/python", "-m", "ensurepip", "--default-pip"
+    system venv/"bin/pip", "install", "--no-deps", "."
+    system venv/"bin/pip", "install", "."
+    bin.install_symlink Dir[venv/"bin/csm"]
   end
 
   test do
