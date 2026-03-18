@@ -1,6 +1,4 @@
 class ClaudeSkillManager < Formula
-  include Language::Python::Virtualenv
-
   desc "Manage Claude Code skills across projects — CLI + TUI"
   homepage "https://github.com/aclemen1/claude-skill-manager"
   url "https://files.pythonhosted.org/packages/source/c/claude-skill-manager/claude_skill_manager-0.2.0.tar.gz"
@@ -10,7 +8,8 @@ class ClaudeSkillManager < Formula
   depends_on "python@3.12"
 
   def install
-    virtualenv_install_with_resources
+    venv = virtualenv_create(libexec, "python3.12")
+    venv.pip_install_and_link buildpath
   end
 
   test do
