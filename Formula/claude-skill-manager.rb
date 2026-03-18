@@ -35,13 +35,13 @@ class ClaudeSkillManager < Formula
   end
 
   resource "mdurl" do
-    url "https://files.pythonhosted.org/packages/d6/54/cfe61301667036ec958cb99bd3efefba235e65cdeb9c84d24571c6f8f158/mdurl-0.1.2.tar.gz"
-    sha256 "bb413d29f5eea38f31dd4754dd7377d4465116fb207585f97bf925b070a9ad78"
+    url "https://files.pythonhosted.org/packages/d6/54/cfe61301667036ec958cb99bd3efefba235e65cdeb9c84d24a8293ba1d90/mdurl-0.1.2.tar.gz"
+    sha256 "bb413d29f5eea38f31dd4754dd7377d4465116fb207585f97bf925588687c1ba"
   end
 
   resource "linkify-it-py" do
-    url "https://files.pythonhosted.org/packages/f0/4d/3012e0e2fda0c86e2d79e84784d0bf79ee31a2dd942d377193ff2120dec1/linkify_it_py-2.1.0.tar.gz"
-    sha256 "1d1eafcb61a38386fae30e97ab8e79a2bb7f16a10b9ae9213ea03eefdf442e75"
+    url "https://files.pythonhosted.org/packages/2e/c9/06ea13676ef354f0af6169587ae292d3e2406e212876a413bf9eece4eb23/linkify_it_py-2.1.0.tar.gz"
+    sha256 "43360231720999c10e9328dc3691160e27a718e280673d444c38d7d3aaa3b98b"
   end
 
   resource "platformdirs" do
