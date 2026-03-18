@@ -1,15 +1,9 @@
 class ClaudeSkillManager < Formula
   desc "Manage Claude Code skills across projects — CLI + TUI"
   homepage "https://github.com/aclemen1/claude-skill-manager"
-  url "https://files.pythonhosted.org/packages/e0/b4/1f66f3d558bb053852a25f6ebed693b6ef07a185f9eea75cc70ddfea2794/claude_skill_manager-1.5.1.tar.gz"
-  sha256 "3038a93c4ddaf39061e1d880a1368981ed4ac9cbfa20ff6fbe827dc03bdae2e1"
+  url "https://files.pythonhosted.org/packages/ea/2c/640e9e66d6bc8bc344f4014f417c936ab3ca44d1d4547e696c2b4885a757/claude_skill_manager-1.5.2.tar.gz"
+  sha256 "92784666728d5b93cbb60e64e97262a238d9aa177966ff0f52bba8948507f300"
   license "MIT"
-
-  bottle do
-    root_url "https://github.com/aclemen1/homebrew-tap/releases/download/v1.5.1"
-    rebuild 1
-    sha256 cellar: :any, arm64_sonoma: "14b4639412c316ff9d1c2b639bb60f753165a1ccc3c7a3d5e1b4fb3cbfdf012a"
-  end
 
   depends_on "python@3.12"
   depends_on "rust" => :build
