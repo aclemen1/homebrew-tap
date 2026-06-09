@@ -1,28 +1,28 @@
 class RstudioCli < Formula
   desc "AI-native CLI bridge to drive an RStudio Server/Desktop IDE from a terminal"
   homepage "https://github.com/aclemen1/rstudio-cli"
-  version "0.19.3"
+  version "0.19.4"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/aclemen1/rstudio-cli/releases/download/v0.19.3/rstudio-cli-v0.19.3-aarch64-apple-darwin.tar.gz"
-      sha256 "89f84e7eb177d53753886ffea4755bee5fb356888f9c47fd6fc290f3cac83eee"
+      url "https://github.com/aclemen1/rstudio-cli/releases/download/v0.19.4/rstudio-cli-v0.19.4-aarch64-apple-darwin.tar.gz"
+      sha256 "78a756287eb0d264b68b83d6a700c74073a7353f27244bc0135c90964e6819c5"
     end
     on_intel do
-      url "https://github.com/aclemen1/rstudio-cli/releases/download/v0.19.3/rstudio-cli-v0.19.3-x86_64-apple-darwin.tar.gz"
-      sha256 "d19b669de98844f6b797fbc327d5746d22637fab96994f74cd4071e3dc106b60"
+      url "https://github.com/aclemen1/rstudio-cli/releases/download/v0.19.4/rstudio-cli-v0.19.4-x86_64-apple-darwin.tar.gz"
+      sha256 "52e091044f8f2e660d2d70575d6bc7a9cd082b74d73a9211a94200862d1f2a96"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/aclemen1/rstudio-cli/releases/download/v0.19.3/rstudio-cli-v0.19.3-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "21a0b223229f3bb3c1d7fe26dd75d9f607d911a5990a956a8004d841eb4c1be1"
+      url "https://github.com/aclemen1/rstudio-cli/releases/download/v0.19.4/rstudio-cli-v0.19.4-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "5d8d52f5023b5aea0435bc2f1a60e70387988ab8edc8b9829b1a3330682d9b6a"
     end
     on_intel do
-      url "https://github.com/aclemen1/rstudio-cli/releases/download/v0.19.3/rstudio-cli-v0.19.3-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9617923c1a36fa6f91364335a8f873596c4e60107fd226f31945de7615ae15c6"
+      url "https://github.com/aclemen1/rstudio-cli/releases/download/v0.19.4/rstudio-cli-v0.19.4-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c7e0eea08eadfbaaff134e4ca1a71a641931f70503f8cef10ae7ded17a872a44"
     end
   end
 
@@ -31,6 +31,6 @@ class RstudioCli < Formula
   end
 
   test do
-    assert_match "0.19.3", shell_output("#{bin}/rstudio version")
+    assert_match "0.19.4", shell_output("#{bin}/rstudio version")
   end
 end
