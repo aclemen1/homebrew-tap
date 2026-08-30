@@ -1,28 +1,28 @@
 class HiverCli < Formula
   desc "AI-native CLI + MCP server for the Hiver HQ shared-inbox REST API"
   homepage "https://github.com/aclemen1/hiverhq-cli"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/aclemen1/hiverhq-cli/releases/download/v0.2.0/hiver-cli-v0.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "df3e00c6b424c35568f25ff0935fc39140bde4a8121312fc07411eb3524e8e3d"
+      url "https://github.com/aclemen1/hiverhq-cli/releases/download/v0.3.0/hiver-cli-v0.3.0-aarch64-apple-darwin.tar.gz"
+      sha256 "9cd31c6256e0f8e9ca597dfee71a82c3b69ec43f5030afb27e28a9a5e06b8a1e"
     end
     on_intel do
-      url "https://github.com/aclemen1/hiverhq-cli/releases/download/v0.2.0/hiver-cli-v0.2.0-x86_64-apple-darwin.tar.gz"
-      sha256 "06bdc494ae70f21402f6266d09a8f33aa68ae2e64282c766ac14be407deafdba"
+      url "https://github.com/aclemen1/hiverhq-cli/releases/download/v0.3.0/hiver-cli-v0.3.0-x86_64-apple-darwin.tar.gz"
+      sha256 "0b1d2b19e512b1e05b70c060ca0f59342484f6720898bccc74877277e40c3449"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/aclemen1/hiverhq-cli/releases/download/v0.2.0/hiver-cli-v0.2.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8e7e16f79487887f5582d3202a01368540a22d7ba9c9e3426cb34979a096fd3f"
+      url "https://github.com/aclemen1/hiverhq-cli/releases/download/v0.3.0/hiver-cli-v0.3.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "54487fcab14efbe2214aba5e1ad73b1b5662890f206f740f5de9fdf16bbaa101"
     end
     on_intel do
-      url "https://github.com/aclemen1/hiverhq-cli/releases/download/v0.2.0/hiver-cli-v0.2.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7eb27524e8da3c6568f18cc636526913ad36db9312249e4014addc73ae117e71"
+      url "https://github.com/aclemen1/hiverhq-cli/releases/download/v0.3.0/hiver-cli-v0.3.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "d673d0411d587f8f6bec9da468a85838f072ad0f3a591908d5e783f68c3ca219"
     end
   end
 
@@ -31,6 +31,6 @@ class HiverCli < Formula
   end
 
   test do
-    assert_match "0.2.0", shell_output("#{bin}/hiver version")
+    assert_match "0.3.0", shell_output("#{bin}/hiver version")
   end
 end
